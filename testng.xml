@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumSuite" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="HomePageTest">
+        <classes>
+            <class name="tests.GoogleSearchTest"/>
+            <class name="tests.CoinMarketCapTest"/>
+        </classes>
+    </test>
+
+</suite>
+
