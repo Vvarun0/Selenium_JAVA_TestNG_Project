@@ -1,0 +1,14 @@
+# Treat HTML reports as documentation (not source code)
+*.html linguist-documentation
+
+# Ignore config and property files from language stats
+*.properties linguist-documentation
+testng.xml linguist-documentation
+pom.xml linguist-documentation
+
+# Ignore screenshots and reports folders
+screenshots/** linguist-documentation
+reports/** linguist-documentation
+
+# Force Java as the main language
+*.java linguist-language=Java
